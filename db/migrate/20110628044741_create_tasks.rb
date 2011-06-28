@@ -4,6 +4,7 @@ class CreateTasks < ActiveRecord::Migration
       t.string :title
       t.boolean :done
       t.datetime :completed_at
+      t.references :bucket
 
       t.timestamps
     end
